@@ -1,0 +1,23 @@
+{
+  "name": "APOTEKA LAMELA",
+  "description": "Moderna web stranica apoteke sa katalogom lijekova i AI asistentom",
+  "framework": "nextjs",
+  "version": "1.0.0",
+  "deploymentPlatform": "vercel",
+  "features": [
+    "Medicine Catalog",
+    "Online Reservations",
+    "Prescription Upload",
+    "AI Medical Assistant",
+    "Google Maps Integration"
+  ],
+  "integrations": {
+    "database": "supabase",
+    "authentication": false,
+    "analytics": true
+  },
+  "environmentVariables": {
+    "required": ["NEXT_PUBLIC_SUPABASE_URL", "NEXT_PUBLIC_SUPABASE_ANON_KEY"],
+    "optional": ["NEXT_PUBLIC_DEV_SUPABASE_REDIRECT_URL"]
+  }
+}
